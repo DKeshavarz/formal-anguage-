@@ -6,18 +6,11 @@
 using namespace std;
 
 int main () {
-    DFA answer;
-    answer.addVertex("q0");
-    answer.addVertex("q1");
-    answer.addVertex("q2");
-    answer.setInitialState("q0");
-    answer.addEdge("q0","q1","a");
-    answer.addEdge("q0","q2","b");
-    answer.addEdge("q2","q2","b");
-    answer.addEdge("q2","q1","a");
-    answer.addEdge("q1","q2","b");
-    answer.addEdge("q1","q1","a");
-    answer.setFinals({"q1"});
-    cout << answer.checkWord("aababa");
-    //cout << answer << '\n';
+    DFA answer("ansewer2_1_24.txt");
+
+    cout << answer.checkWord("baababa") << "\n\n";
+    cout << answer.checkWord("aababa" ) << "\n\n";
+    cout << answer.checkWord("abbbbba") << "\n\n";
+
+    return 0;
 }
