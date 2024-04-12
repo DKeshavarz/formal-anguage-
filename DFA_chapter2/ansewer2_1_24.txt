@@ -1,5 +1,5 @@
 q0 q1 q2 trap
-a b 
+a b
 q0 a q1
 q0 b trap
 q1 a q2
